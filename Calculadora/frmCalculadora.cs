@@ -74,37 +74,37 @@ namespace Calculadora
 
         private void BtnPercent_Click(object sender, EventArgs e)
         {
-            
+            Display.Text += '%';
         }
 
         private void Btn1Div_Click(object sender, EventArgs e)
         {
-
+            Display.Text += "1/";
         }
 
         private void BtnEqual_Click(object sender, EventArgs e)
         {
-
+            Display.Text = new DataTable().Compute(Display.Text, null).ToString();
         }
 
         private void BtnPlus_Click(object sender, EventArgs e)
         {
-
+            Display.Text += '+';
         }
 
         private void BtnComa_Click(object sender, EventArgs e)
         {
-
+            Display.Text += ',';
         }
 
         private void BtnSqrt_Click(object sender, EventArgs e)
         {
-
+            Display.Text += '√';
         }
 
         private void BtnMM_Click(object sender, EventArgs e)
         {
-
+            Display.Text += '±';
         }
 
         private void BtnC_Click(object sender, EventArgs e)
@@ -124,17 +124,17 @@ namespace Calculadora
 
         private void BtnDiv_Click(object sender, EventArgs e)
         {
-
+            Display.Text += '/';
         }
 
         private void BtnMult_Click(object sender, EventArgs e)
         {
-
+            Display.Text += '*';
         }
 
         private void BtnMinus_Click(object sender, EventArgs e)
         {
-
+            Display.Text += '-';
         }
 
         private void Display_TextChanged(object sender, EventArgs e)
